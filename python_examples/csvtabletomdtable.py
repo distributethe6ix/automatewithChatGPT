@@ -25,6 +25,8 @@ with open('data.csv', 'r') as f:
   
   # Assemble the final table
   table = f'{header}\n{separator}\n{rows}'
-  
-  # Print the table
-  print(table)
+
+  # Open the output file in write mode
+  with open('table.md', 'w') as out:
+    # Write the table to the file
+    out.write(table)

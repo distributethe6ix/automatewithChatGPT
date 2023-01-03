@@ -19,7 +19,7 @@ with open('your_file_name', 'r') as f:
     heading = f'## {title1} - {title2}'
     
     # Create the bullet point list with the descriptions
-    bullet_points = f'- {description1}\n- {description2}'
+    bullet_points = f'### {description1}\n- {description2}'
     
     # Create the Markdown content by combining the heading and bullet points
     markdown = f'{heading}\n{bullet_points}'
